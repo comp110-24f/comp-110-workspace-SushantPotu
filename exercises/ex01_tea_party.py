@@ -30,10 +30,11 @@ def cost(tea_count: int, treat_count: int) -> float:
 
 
 def main_planner(guests: int) -> None:
+    """prints out the final cost and number of items in final formatting"""
     print("A Cozy Tea party for " + str(guests) + " people!")
     print("Tea Bags: " + str(tea_bags(guests)))
     print("Treats: " + str(treats(guests)))
-    print("Cost: $ " + str(cost(tea_bags(2), treats(2))))
+    print("Cost: $" + str(cost(tea_bags(guests), treats(guests))))
     # Prints out the information about the party in formatted form
     # Number of guests, teabags, treats and the total cost
 
